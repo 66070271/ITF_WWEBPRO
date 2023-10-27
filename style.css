@@ -21,6 +21,10 @@ body{
     text-decoration: none;
     color: black;
 }
+.on-hover:hover{
+    text-decoration: underline;
+    color: green
+}
 .profile-img{
     display: flex;
     flex-direction: column;
