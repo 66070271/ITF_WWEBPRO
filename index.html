@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./style.css">
+    <script>
+        function setusername(){
+            document.getElementById("own").innerHTML = document.getElementById("username").value + "'s Gallery"
+        }
+        function setProfileimg(){
+            document.getElementById("profileImage").style.backgroundImage = "url("+document.getElementById("profileimg").value
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id = "profileImage">
+
+            </div>
+            <div class="noti">9!</div>
+        </div>
+        <div class="username">
+            <a href = "https://www.dsa.org/" class = "on-hover">
+            <p id = "own" style = "font-size:large;font-weight: 600;">
+                Thitipat's Gallery
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label>Username</label><input style = "margin-left: 29px" type = "text" id = "username"><button id="setusername" onclick=setusername()>apply</button></div>
+            <div><label>Profile image</label><input style = "margin-left:10px" type = "text" id = "profileimg"><button id = "setprofile" onclick = "setProfileimg()">apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-items col-span">
+                <img style= "width: 630px; height: 300px;"src="./picture/1.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style= "height: 300px; "src="./picture/2.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/3.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/4.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/5.jpg">
+            </div>
+            <div class="gallery-items row-span">
+                <img style="width:300px; height: 625px;" src ="picture/PIA_5567-mod_resize_resize.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/6.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/7.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/8.jpg">
+            </div>
+            <div class="gallery-items">
+                <img  style = "height : 300px; width: 300px;"src = "./picture/9.jpg">
+            </div>
+        </div>                
+    </div>
+</body>
+</html>
